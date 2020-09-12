@@ -1,6 +1,6 @@
 /*        - используя while вывести все числа от 0 до 20 в 1 строку через пробел*/
 
-package main.java.cycletask;
+package main.java.tasks.day2.cycletask;
 
 public class WhileCycle {
     public static void main(String[] args) {

@@ -8,7 +8,7 @@
         - поменять местами первый и последний элементы и вывести результат
         - отсортировать элементы массива в порядке убывания (любым способом)*/
 
-package main.java.arraytask;
+package main.java.tasks.day2.arraytask;
 
 import java.util.Random;
 

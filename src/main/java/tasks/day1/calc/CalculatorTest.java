@@ -1,4 +1,4 @@
-package main.java.calc;
+package main.java.tasks.day1.calc;
 
 public class CalculatorTest {
     public static void main(String[] args) {

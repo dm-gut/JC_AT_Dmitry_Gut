@@ -1,7 +1,7 @@
 
 /*- используя for вывести каждое нечетное число от 3 до 19 включительно*/
 
-package main.java.cycletask;
+package main.java.tasks.day2.cycletask;
 
 public class ForCycle {
     public static void main(String[] args) {

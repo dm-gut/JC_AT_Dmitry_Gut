@@ -2,7 +2,11 @@ package main.java.project.bubbletask;
 
 public class SparklingWater extends Water {
     private boolean isOpened;
-    private Bubble[] bubbles = new Bubble[0];
+    private Bubble[] bubbles;
+
+    public void setBubbles(Bubble[] bubbles) {
+        this.bubbles = bubbles;
+    }
 
     public void setOpened(boolean opened) {
         isOpened = true;
@@ -12,13 +16,19 @@ public class SparklingWater extends Water {
         isOpened();
     }
 
-    public void pump(Bubble[] bubbles) {
-        Bubble[]
+    private void isOpened() {
+        isOpened = true;
     }
 
-    void isOpened() {
-        Thread thread = run() -> {
-            while (isOpened) {
+    public void pump(Bubble[] bubbles) {
+        setBubbles(bubbles);
+    }
+
+    void checkIsOpened() {
+/*
+
+        Thread thread = run() → {
+            while (!isOpened) {
                 System.out.println("Bottle is closed...");
                 try {
                     Thread.sleep(2000);
@@ -33,6 +43,17 @@ public class SparklingWater extends Water {
             }
         };
         thread.start();
+
+*/
+    }
+    private void degas() {
+
+    }
+
+    public boolean isSparkle() {
+        if (bubbles.length > 0) {
+        }
+        return true;
     }
 }
 

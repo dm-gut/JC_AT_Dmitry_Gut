@@ -7,6 +7,9 @@ public class Bottle {
     Bottle(double volume) {
         double quantity = volume * 10000;
         Bubble[] bubbles = new Bubble[(int) quantity];
+        for (int i = 0; i < bubbles.length; i++) {
+            bubbles[i] = new Bubble("carbon dioxide");
+        }
     }
 
     public void open() {

@@ -1,10 +1,27 @@
-package main.java.bubbletask;
+package main.java.project.bubbletask;
 
 public class Bottle {
-    double volumeOfBottle;
-    String water;
+    private double volume;
+    private SparklingWater water = new SparklingWater();
 
-    void open() {
-        SparklingWater.closed = false;
+    Bottle(double volume) {
+        double quantity = volume * 10000;
+        Bubble[] bubbles = new Bubble[(int) quantity];
+    }
+
+    public void open() {
+        this.water.setOpened(true);
+    }
+
+    public void warm(int temp) {
+        this.water.setTemp(0);
+    }
+
+    public SparklingWater getWater() {
+        return water;
+    }
+
+    public void setWater(SparklingWater water) {
+        Water newWater = new Water();
     }
 }

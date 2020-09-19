@@ -1,10 +1,18 @@
-package main.java.bubbletask;
+package main.java.project.bubbletask;
 
 public class Bubble {
-    double volume = 0.3;
-    String consist;
+    private double VOLUME = 0.3;
+    String gas;
 
-    static void cramp() {
+    Bubble(String gas) {
+        this.gas = "carbon";
+    }
+
+    public void cramp() {
         System.out.println("Cramp!");
+    }
+
+    public double getVolume() {
+        return VOLUME;
     }
 }

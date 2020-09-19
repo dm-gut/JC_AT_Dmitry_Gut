@@ -1,20 +1,38 @@
-package main.java.bubbletask;
+package main.java.project.bubbletask;
 
 public class SparklingWater extends Water {
-    boolean closed = true;
-    int bubbles;
+    private boolean isOpened;
+    private Bubble[] bubbles = new Bubble[0];
 
-    void pump(Bubble[] bubbles) {
+    public void setOpened(boolean opened) {
+        isOpened = true;
+    }
 
+    SparklingWater() {
+        isOpened();
+    }
+
+    public void pump(Bubble[] bubbles) {
+        Bubble[]
     }
 
     void isOpened() {
-        if (closed = false) {
+        Thread thread = run() -> {
+            while (isOpened) {
+                System.out.println("Bottle is closed...");
+                try {
+                    Thread.sleep(2000);
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
             }
-        }
-    void degas() {
-        bubbles = bubbles - 1;
-        Bubble.cramp();
+            try {
+                degas();
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+        };
+        thread.start();
     }
 }
 

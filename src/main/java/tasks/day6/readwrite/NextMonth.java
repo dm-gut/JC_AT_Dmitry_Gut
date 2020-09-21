@@ -4,21 +4,23 @@ import java.util.Scanner;
 
 public class NextMonth {
     public static void main(String[] args) {
-        nextMonth();
-        System.out.println(nextMonth());
-    }
 
-    private static String nextMonth() {
+        String nextMonth;
         String[] months = {"Январь", "Февраль", "Март", "Апрель", "Май", "Июнь", "Июль", "Август", "Сентбрь", "Октябрь", "Ноябрь", "Декабрь"};
         Scanner sc = new Scanner(System.in);
-        String thisMonth = (String) sc;
+        String thisMonth = sc.nextLine();
 
         int i = 0;
         for (; i < months.length; i++) {
             if (months[i] == thisMonth) {
                 break;
+            } else {
+                continue;
             }
         }
-        return months[i + 1];
+        nextMonth = months[i + 1];
+        System.out.println(nextMonth);
+
     }
 }
+

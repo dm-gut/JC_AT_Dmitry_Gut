@@ -25,9 +25,9 @@ public class SparklingWater extends Water {
     }
 
     void checkIsOpened() {
-/*
 
-        Thread thread = run() → {
+        Thread thread = new Thread(){
+            public void run() {
             while (!isOpened) {
                 System.out.println("Bottle is closed...");
                 try {
@@ -44,7 +44,6 @@ public class SparklingWater extends Water {
         };
         thread.start();
 
-*/
     }
     private void degas() {
 

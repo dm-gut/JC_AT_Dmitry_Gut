@@ -1,14 +1,18 @@
-package main.java.project.bubbletask;
+package main.java.project.bubbletask.stuff;
 
 public class Bubble {
     private double VOLUME = 0.3;
     private String gas;
 
+    public String getGas() {
+        return gas;
+    }
+
     public void setGas(String gas) {
         this.gas = gas;
     }
 
-    Bubble(String gas) {
+    public Bubble(String gas) {
         this.gas = gas;
     }
 

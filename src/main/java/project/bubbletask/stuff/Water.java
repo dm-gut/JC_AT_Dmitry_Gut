@@ -1,10 +1,14 @@
-package main.java.project.bubbletask;
+package main.java.project.bubbletask.stuff;
 
 public class Water {
     private String color = "no";
     private String transparency = "transparent";
     private String smell = "no";
     private double temp = 0;
+
+    public Water() {
+
+    }
 
     public String getColor() {
         return color;
@@ -35,6 +39,13 @@ public class Water {
     }
 
     public void setTemp(double temp) {
+        this.temp = temp;
+    }
+
+    public Water(String color, String transparency, String smell, double temp) {
+        this.color = color;
+        this.transparency = transparency;
+        this.smell = smell;
         this.temp = temp;
     }
 }

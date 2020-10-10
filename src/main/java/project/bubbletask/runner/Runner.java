@@ -1,4 +1,6 @@
-package main.java.project.bubbletask;
+package main.java.project.bubbletask.runner;
+
+import main.java.project.bubbletask.vessel.Bottle;
 
 public class Runner {
     public static void main(String[] args) {
